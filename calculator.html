@@ -18,6 +18,11 @@ function square() {
 var num = document.getElementById("n1");
 num.value = Math.pow(num.value, 2);
 }
+
+function inverse() {
+var num = document.getElementById("n1");
+num.value = Math.pow(num.value, -1);
+}
 </script>
 </head>
 <body>
@@ -25,6 +30,7 @@ num.value = Math.pow(num.value, 2);
 Number:
 <input type="text" id="n1">
 <p>
+<button onclick="inverse()"> x^1 </button>
 <button onclick="square()"> x^2 </button>
 <button onclick="cube()"> x^3 </button>
 </p>
